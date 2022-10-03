@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de pesquisa</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+
+<body>
+
+    <img id="imge" src="images/fatec.jpg">
+    
+    <nav id='menu'>
+    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+    <ul>
+        <li><a href='http://'>Inicio</a></li>
+        <li><a href='http://'>Contato</a></li>
+        <li><a href='http://'>Sobre</a></li>
+    </ul>
+    </nav>
+
+
+</body>
+<div class="conteudo">
+    <div class="content">
+        <form action="">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="row">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
+                </div>
+                <div class="row">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" autocomplete="off"
+                        required>
+                </div>
+                <div class="row">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="e-mail" autocomplete="off" required>
+                </div>
+                <div class="row">
+                    <label for="dtnasc">Data de Nascimento</label>
+                    <input type="date" id="dtnasc" name="dtnasc">
+                </div>
+                <div class="row">
+                    <label for="">Estado Civil</label>
+                    <input type="radio" value="Casado" id="casado" name="estadocivil">
+                    <label for="casado">Casado</label>
+                    <input type="radio" value="Solteiro" id="solteiro" name="estadocivil">
+                    <label for="solteiro">Solteiro</label>
+                </div>
+                <div class="row">
+                    <label for="filhos">Filhos</label>
+                    <input type="number" id="filhos" name="filhos" max="10" min="0">
+                </div>
+                <div class="row"></div>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Acadêmicos </legend>
+                <div class="row">
+                    <a>Selecione o(s) curso(s) que deseja cursar </a>
+                </div>
+                <div class="row">
+                    <input type="checkbox" id="GTI" name="GTI">
+                    <label for="GTI">GTI</label>
+                    <input type="checkbox" id="ADS" name="ADS">
+                    <label for="ADS">ADS</label>
+                    <input type="checkbox" id="GE" name="GE">
+                    <label for="GE">GE</label>
+                    <input type="checkbox" id="Eventos" name="Eventos">
+                    <label for="Eventos">Eventos</label>
+                    <input type="checkbox" id="Mecatrônica" name="Mecatrônica">
+                    <label for="Mecatrônica">Mecatrônica</label>
+
+
+                </div>
+                <div class="row">
+                    <a>Porque escolheu a Fatec?</a>
+                </div>
+                <div class="row">
+                    <textarea name="sobre" id="sobre" cols="30" rows="5" placeholder="Descreva seus motivos"
+                        autocomplete="off"></textarea>
+                </div>
+
+            </fieldset>
+            <div class="buttons">
+                <input type="submit">
+                <input type="reset" value="🧹Limpar">
+            </div>
+        </form>
+    </div>
+
+    <br>
+
+    <br>
+    <div>
+        <h1>Dados Gerais</h1>
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>E-mail</th>
+                <th>Curso</th>
+                <th colspan="2">Opções</th>
+
+            </tr>
+            <tr>
+                <td> Teste</td>
+                <td> Teste2</td>
+                <td> teste@fatec</td>
+                <td> GTI</td>
+                <td><Button>🖊Editar</Button></td>
+                <td><Button>🧹Limpar</Button></td>
+            </tr>
+            <tr>
+                <td> Maria</td>
+                <td> Silva</td>
+                <td> mariasilva@gmail.com</td>
+                <td> GE</td>
+                <td><Button>🖊Editar</Button></td>
+                <td><Button>🧹Limpar</Button></td>
+
+            </tr>
+
+
+            <tr>
+                <td> João</td>
+                <td> Teodoro</td>
+                <td> joaoteodoro@gmail.com</td>
+                <td> ADS</td>
+                <td><Button>🖊Editar</Button></td>
+                <td><Button>🧹Limpar</Button></td>
+
+            </tr>
+            <tr>
+                <td> Paulo</td>
+                <td> Medeiros</td>
+                <td> paulomedeiros@gmail.com</td>
+                <td> Mecatrônica</td>
+                <td><Button>🖊Editar</Button></td>
+                <td><Button>🧹Limpar</Button></td>
+
+            </tr>
+
+            <tr>
+                <td> Julia</td>
+                <td> Faria</td>
+                <td> juliafaria@gmail.com</td>
+                <td> Eventos</td>
+                <td><Button>🖊Editar</Button></td>
+                <td><Button>🧹Limpar</Button></td>
+
+            </tr>
+            <tr>
+                <td colspan="4" ; class="total">Total de pessoas cadastradas</td>
+                <td colspan="2">5</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+</body>
+
+</html>
